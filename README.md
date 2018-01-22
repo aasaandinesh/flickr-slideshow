@@ -51,3 +51,11 @@ Maybe I would have over-engineered things, but thats the :( but that's the solut
 operator I came across ```bufferUntill``` in [RxExtensions](https://github.com/akarnokd/RxJava2Extensions#flowabletransformersbufferwhile)
 with accepts custom ```Predicate```. But not able to find such solution in any of the Native operators.
 
+#Known Issues
+* Not optimised to orientation change, if activity goes off, then everything is restarted.
+* Errors not handled, app is built only for happy :D cases. If anything goes wrong like network, api error, the app will crash
+* UI is not worked upon, it very raw
+* Need to find a more reactive way of updating the fragments, going off the stream is crime!
+* Maybe use ViewPager for better slideshow options
+
+
